@@ -1,14 +1,15 @@
+#include <stdio.h>
 #include "mystring.c"
 #include "myutils.c"
-#include <stdio.h>
 
 
-int main() {
+int main()
+{
   char str[]="Bablu";
-  int prime=15, palindrome=313, fact=10, num=7, k=1;
+  int prime=15, palindrome=313, factorial=10;
   
 
-  printf("Length of the string is %lu\n ",mystrlen(s));
+  printf("Length of the string is %lu\n ",mystrlen(str));
   
   if(isPrime(prime))
       printf("The number is PRIME\n");
@@ -16,6 +17,6 @@ int main() {
   if(isPalindrome(palindrome))
       printf("The number is PALINDROME\n");
 
-  printf("factorial of %d is %d \n",fact,factorial(fact));
+  printf("Factorial of %d is %d \n",factorial,factorial(factorial));
   return 0;
 }
