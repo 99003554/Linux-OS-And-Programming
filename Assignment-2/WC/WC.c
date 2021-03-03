@@ -23,23 +23,23 @@ int main()
     {
         for(int i=0;i<nbytes;i++)
         {
-            /* Check new line */
+            //Check new line
             if (ch[i] == '\n')
                lines++;
-            /* Check words */
+
+            //Check words */
             if (ch[i] == ' ' || ch[i] == '\t' || ch[i] == '\n')
                words++;
         }
         characters = nbytes;
     }
 
-    printf("\n");
-    printf("Total characters = %d\n", characters);
-    printf("Total words      = %d\n", words);
-    printf("Total lines      = %d\n", lines);
+    printf("Total characters : %d\n", characters);
+    printf("Total words      : %d\n", words);
+    printf("Total lines      : %d\n", lines);
 
 
-    /* Close files to release resources */
+    //Close files to release resources
     close(fd);
 
     return 0;
