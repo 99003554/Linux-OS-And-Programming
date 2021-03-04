@@ -1,6 +1,6 @@
 src = Copy.c
 project = Copy
-target: $(src)
+$(project): $(src)
 	gcc $^ -o $@
 run: $(project)
 	./$^

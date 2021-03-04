@@ -27,7 +27,7 @@ int main()
             if (ch[i] == '\n')
                lines++;
 
-            //Check words */
+            //Check words
             if (ch[i] == ' ' || ch[i] == '\t' || ch[i] == '\n')
                words++;
         }
